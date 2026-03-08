@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dq6dlav8r0f7p" path="res://assets/images/tiles/world_tileset.png" id="1_x6ivy"]
 [ext_resource type="PackedScene" uid="uid://dpe6kst26pxk4" path="res://scenes/player.tscn" id="2_4tcl0"]
 [ext_resource type="PackedScene" uid="uid://bd0jan77oq0l3" path="res://scenes/mushroom.tscn" id="4_bfxgj"]
+[ext_resource type="PackedScene" uid="uid://c7sfutejhse24" path="res://scenes/meat.tscn" id="5_dywbp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ypoqj"]
 texture = ExtResource("1_x6ivy")
@@ -227,4 +228,17 @@ position = Vector2(41, 190.33334)
 [node name="Enemies" type="Node2D" parent="." unique_id=633005088]
 
 [node name="Mushroom" parent="Enemies" unique_id=1610336327 instance=ExtResource("4_bfxgj")]
-position = Vector2(260, 176)
+position = Vector2(375.6667, 187)
+
+[node name="Meats" type="Node2D" parent="." unique_id=209249036]
+
+[node name="Meat" parent="Meats" unique_id=840665992 instance=ExtResource("5_dywbp")]
+position = Vector2(72.66667, 119.33333)
+
+[node name="Meat2" parent="Meats" unique_id=678638041 instance=ExtResource("5_dywbp")]
+position = Vector2(223.66667, 128.66666)
+metadata/_edit_group_ = true
+
+[node name="Meat3" parent="Meats" unique_id=1295091703 instance=ExtResource("5_dywbp")]
+position = Vector2(343.66666, 39.333332)
+metadata/_edit_group_ = true

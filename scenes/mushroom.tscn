@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://vjr2pcw67tu3" path="res://assets/images/enemies/Mushroom/Mushroom-Run.png" id="1_b0s10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0bdi0"]
-size = Vector2(29, 34)
+size = Vector2(20, 23)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qxrkd"]
 atlas = ExtResource("1_b0s10")
@@ -74,10 +74,11 @@ animations = [{
 script = ExtResource("1_0bdi0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1188208243]
-position = Vector2(-1.5, 15)
+position = Vector2(-1, 10.5)
 shape = SubResource("RectangleShape2D_0bdi0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=281810017]
+scale = Vector2(0.671875, 0.671875)
 sprite_frames = SubResource("SpriteFrames_vfc76")
 animation = &"Run"
 autoplay = "Run"
